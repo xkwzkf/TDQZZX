@@ -1,6 +1,43 @@
 body{
-
+    box-sizing:border-box;
+    //background-color: #DDDDDD;
+    position:relative;
+    z-index:0;
+    width: 100%;
+    font-size: 18px;
+    min-width: 1000px;
 }
+
+ul,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #46558C;
+}
+
+hr.list{
+    border: 0.1px dashed #46558C;
+    width: 100%;
+}
+
+.more{
+    float: right;
+    font-size: 14px;
+    color: #46558C;
+    padding: 5px 0px 0px 0px;
+}
+
 header.header{
     background-image: url("../images/顶上蓝色块1.png");
     vertical-align: bottom;
@@ -13,6 +50,7 @@ header.header{
     margin: 0px 0px 5px 0px ;
     padding: 0px;
     border: 0px;
+    min-width: 1000px;
 }
 
 .logoTitle img{
@@ -22,7 +60,7 @@ header.header{
     float: left;
     width: 90px;
     height: 90px;
- }
+}
 
 .logoTitle p{
     padding: 30px 0px 5px 0px;
@@ -45,39 +83,289 @@ header.header{
     clear: both;
 }
 
-.navigate ul{
-    list-style-type: none;
+.navigate{
+    z-index: 10;
+    position: absolute;
+    top: 120px;
+    left: 80px;
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 180px 0px;
     overflow: hidden;
+    clear: both;
 }
 
-.navigate li a, .dropBtn {
+.navList{
+    float: left;
+}
+
+.noDrop, .dropBtn{
     display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover, .dropDown:hover .dropBtn {
-    background-color: #111;
-}
-
-.Down a {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    width: 100px;
+    height: 20px;
+}
+
+.navList a:hover, .dropDown:hover .dropBtn{
+    background-color: #436088;
+    font-size: 19px;
+    color: white;
+}
+
+.dropDown{
+    display: inline-block;
+}
+
+.Down{
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Down a{
+    color: black;
+    padding: 10px 15px;
+    width: 100px;
     display: block;
 }
 
-.Down a:hover {background-color: #f1f1f1}
+.Down a:hover{
+    background-color: #f1f1f1;
+    font-size: 18px;
+    color: black;
+}
 
 .dropDown:hover .Down{
     display: block;
 }
 
+.search{
+    position: absolute;
+    top: 125px;
+    right: 5px;
+    margin:0;
+    padding: 0;
+    width:auto;
+    height: 30px;
+    background-color: #436088;
+}
+
+.searchImg{
+    float:left;
+    margin:0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.searchText{
+    margin:0;
+    padding: 0;
+    height: 26px;
+    width:100px;
+    background-color: #f1f1f1;
+}
+
+.searchBtn{
+    margin:0;
+    padding: 0px;
+    width: 50px;
+    height: 30px;
+    color: white;
+    float: right;
+    background-color: #436088;
+}
+
+.Show{
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+}
+
+.showImg{
+    width: 100%;
+    height: 450px;
+    mid-height: 100px;
+}
+
+.showText{
+    z-index: 10;
+    position: absolute;
+    left: 150px;
+    top: 360px;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    background-size: cover;
+    filter:alpha(opacity=80);
+    -moz-opacity:0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
 .content{
     position: absolute;
-    top:1500px;
+    top: 650px;
+    left: 10%;
+    margin: 0px;
+    padding: 0px;
+    width: 80%;
+    height: 1500px;
 }
+
+.contentNotice{
+    width: 70%;
+    min-width: 570px;
+    height: 280px;
+    //background-color: #ffcc00;
+}
+
+.noticeTitle{
+    font-size: 18px;
+    margin: 0px;
+    padding: 10px 0px;
+    color: black;
+}
+
+.noticeImg{
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 40%;
+    height: 200px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.noticeImg img{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+.noticeHead{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+.noticeList{
+    font-size: 16px;
+    position: relative;
+    top: -190px;
+    left:40%;
+    width: 60%;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.noticeList a{
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentInfo{
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    width: 25%;
+    height: 280px;
+    overflow: hidden;
+    //background-color: #ffcc00;
+}
+
+.infoTitle{
+    margin: 0px;
+    padding: 20px 0px;
+    color: black;
+}
+
+.info{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    min-width: 150px;
+}
+
+.infoImg{
+    float: left;
+    background-color: #46558C;
+}
+
+.info p{
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0px;
+    min-width:250px;
+}
+
+.Info{
+    font-size: 16px;
+}
+
+.contentTutor{
+    position: relative;
+    top: 25px;
+    width: 50%;
+    min-width: 350px;
+    height: 370px;
+    overflow: hidden;
+    //background-color: #ffcc00;
+}
+
+.contentJob{
+    position: relative;
+    top: 25px;
+    right: 0;
+    width: 50%;
+    min-width: 350px;
+    height: 370px;
+    overflow: hidden;
+    //background-color: #ffcc00;
+}
+
+.parentIn, .BossIn{
+    float: right;
+    color: white;
+    padding: 3px 5px;
+    background-color: #46558C;
+}
+
+.parentIn img, .BossIn img{
+    float: right;
+}
+
+.tutorList, .jobList{
+    position: relative;
+    left:-40px;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    min-width: 360px;
+}
+
+.tutorList a, .jobList a{
+    font-size: 16px;
+    margin:0;
+    padding: 0;
+    height: 40px;
+    text-align: left;
+}
+

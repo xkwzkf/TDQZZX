@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>中南大学铁道校区勤工助学中心</title>
-  <link href="css/home.css" type="text/css" rel="stylesheet" />
+  <link href="../css/home.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/pku_favicon.ico" mce_href="/pku_favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -11,235 +12,229 @@
 <header class="header">
   <div class="logoTitle">
     <a href="home.html" title="中南大学铁道校区勤工助学中心">
-      <img class="headImg" src="./images/logo.png">
+      <img class="headImg" src="../images/logo.png">
     </a>
     <p class="headTitle">中南大学铁道校区勤工助学中心</p>
   </div>
 </header>
 <div class="Motto"><p>严谨&nbsp;务实<br/>高效&nbsp;进取</p></div>
 
-<section class="navigate">
-  <ul class="navList">
-    <li id="nagHomePage"><a href="home.html">首页</a></li>
-    <div class="dropDown">
-      <a class="dropBtn" href="#">魅力勤助</a>
-      <div class="Down">
-        <a class="downList" href="#">勤助发展</a>
-        <a class="downList" href="#">部门风采</a>
-        <a class="downList" href="#">队伍风采</a>
-        <a class="downList" href="#">员工风采</a>
-      </div>
-    </div>
-
-    <li id="nagNotice"><a href="home.html">通知公告</a></li>
-
-    <div class="dropDown">
-      <a class="dropBtn" href="home.html">家教帮手</a>
-      <div class="Down">
-        <a class="downList" href="#">家长入口</a>
-        <a class="downList" href="#">教员入口</a>
-      </div>
-    </div>
-
-    <div class="dropDown">
-      <a class="dropBtn" href="home.html">兼职帮手</a>
-      <div class="Down">
-        <a class="downList" href="#">企业入口</a>
-        <a class="downList" href="#">学生入口</a>
-      </div>
-    </div>
-
-    <div class="dropDown">
-      <a class="dropBtn" href="home.html">失物招领</a>
-      <div class="Down">
-        <a class="downList" href="#">失主入口</a>
-        <a class="downList" href="#">失物详情</a>
-      </div>
-    </div>
-
-    <div class="dropDown">
-        <a class="dropBtn" href="#">闲置物品交易</a>
-        <div class="Down">
-          <a class="downList" href="#">卖家入口</a>
-          <a class="downList" href="#">买家入口</a>
-        </div>
-      </a>
-    </div>
-  </ul>
-</section>
   <!-- for mobile [begin] -->
 
   <!--  for mobile [end] -->
 
+<!--搜索-->
+<div class="search">
+  <img  class="searchImg" src="../images/search.png">
+  <input class="searchText" type="text" alt="请输入...">
+  <input class="searchBtn" type="button" name="search" value="搜索">
+</div>
+<!--网页导航栏-->
+<div clss="navigate">
+  <ul class="navigate">
+    <li class="navList"><a class="noDrop" href="home.html">&nbsp;首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页&nbsp;</a></li>
+
+    <li class="navList">
+      <div class="dropDown">
+        <a class="dropBtn" href="#">魅力勤助</a>
+        <div class="Down">
+          <a href="#">勤助发展</a>
+          <a href="#">部门风采</a>
+          <a href="#">队伍风采</a>
+          <a href="#">员工风采</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="navList"><a  class="noDrop" href="home.html">通知公告</a></li>
+
+    <li class="navList">
+      <div class="dropDown">
+        <a class="dropBtn" href="home.html">家教帮手</a>
+        <div class="Down">
+          <a href="#">家长入口</a>
+          <a href="#">教员入口</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="navList">
+      <div class="dropDown">
+        <a class="dropBtn" href="home.html">兼职帮手</a>
+        <div class="Down">
+          <a href="#">企业入口</a>
+          <a href="#">学生入口</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="navList">
+      <div class="dropDown">
+        <a class="dropBtn" href="home.html">失物招领</a>
+        <div class="Down">
+          <a href="#">失主入口</a>
+          <a href="#">失物详情</a>
+        </div>
+      </div>
+    </li>
+
+    <li class="navList">
+      <div class="dropDown">
+        <a class="dropBtn" href="#">二手交易</a>
+        <div class="Down">
+          <a href="#">卖家入口</a>
+          <a href="#">买家入口</a>
+        </div>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!--宣传栏（图文消息）-->
+<div class="Show">
+  <a>
+    <img class="showImg" src="../images/head.jpg" width="100%" title="显示图文消息的标题">
+  </a>
+  <a class="showText" href="#">欢迎来到中南大学铁道校区勤工助学中心</a>
+</div>
 
 <!--网页主体-->
-<section class="content">
-
-  <section class="contentShow">
-    <a>
-      <img class="img" id="showImg" src="./images/head.jpg" width="100%" title="显示图文消息的标题">
-    </a>
-  </section>
-
-  <ul>
-    <li class="titleNotice" id="notice"><a href="#">通知公告</a></li>
-    <li class="titleInfo" id="info"><a href="#">中心信息</a></li>
-  </ul>
-  <hr/>
-  <section class="contentNotice">
+<div class="content">
+  <!--通知公告-->
+  <div class="contentNotice">
+    <a class="noticeTitle" href="#" >通知公告</a>
+    <hr/>
+    <div class="noticeImg">
+      <a class="noticeHead">
+        <img class="notImg" src="../images/test.jpg" title="§向各二级学院发公告收取工资考核表"><br/>
+      </a>
+      <a class="noticeTxt" href="#">向各二级学院发公告收取工资考核表向各二级学院发公告收取工资考核表向各二级学院发公告收取工资考核表</a>
+    </div>
     <div class="noticeList">
-      <ul  class="noticeList">
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
+      <ul>
+        <li><a href="#">§向各二级学院发公告收取工资考核表</a></li>
+        <hr class="list"/>
+        <li><a href="#">§向各二级学院发公告收取工资考核表</a></li>
+        <hr class="list"/>
+        <li><a href="#">§向各二级学院发公告收取工资考核表</a></li>
+        <hr class="list"/>
+        <li><a href="#">§向各二级学院发公告收取工资考核表</a></li>
+        <hr class="list"/>
+        <li><a href="#">§向各二级学院发公告收取工资考核表</a></li>
+        <hr class="list"/>
       </ul>
     </div>
-
-    <section class="contentInfo">
-      <div class="infoLogo">
-        <a href="#">
-          <img src="./images/logo.png" width="80" height="80" alt="中南大学铁道校区勤工助学中心">
-        </a>
-      </div>
-
-      <div class="infoTitle">
-        <a class="infoTitle" href="#">
-          <h4><a href="#">中南大学铁道校区勤工助学中心</a></h4>
-        </a>
-      </div>
-
-      <div class="infoTime">
-        <p class="infoTime">办公时间：&nbsp;&nbsp;08:00-18:20</p>
-      </div>
-
-      <div class="infoLocation">
-        <p class="infoLocation">办公地点：&nbsp;&nbsp;铁道学院办公楼411</p>
-      </div>
-
-      <div class="infoContact">
-        <p class="infoContact">联系方式：&nbsp;&nbsp;82656607</p>
-      </div>
-    </section>
-  </section>
-
-  <section class="contentInfo">
-    <div class="contentInfo">
-
-    </div>
-  </section>
-
-  <section class="contentTutor">
-    <h1 class="contentTutor" id="tutor"><a href="#">家教信息</a></h1>
-    <hr/>
-    <div class="contentTutor">
-      <ul  class="contentTutor">
-        <!--读取数据库至数组tutor_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contentJob">
-    <h1 class="contentJob" id="job"><a href="#">兼职信息</a></h1>
-    <hr/>
-    <div class="contentJob">
-      <ul  class="contentJob">
-        <!--读取数据库至数组job_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contentLost">
-    <h1 class="contentLost" id="lost"><a href="#">失物信息</a></h1>
-    <hr/>
-    <div class="contentLost">
-      <ul  class="contentLost">
-        <!--读取数据库至数组lost_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contentUnused">
-    <h1 class="contentUnused" id="unused"><a href="#">闲置物品</a></h1>
-    <hr/>
-    <div class="contentUnused">
-      <ul  class="contentUnused">
-        <!--读取数据库至数组unused_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contentOthers">
-    <ul>
-      <li class="contentQuestions" id="left"><a href="#">常见问题</a></li>
-      <li class="contentLinks" id="right"><a href="#">友情链接</a></li>
-    </ul>
-
-    <hr/>
-    <div class="contentQuestions">
-      <ul  class="contentQuestions">
-        <!--读取数据库至数组others_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-
-    <div class="contentlinks">
-      <ul  class="contentlinks">
-        <!--读取数据库至数组others_info-->
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-        <li><a href="#">#########</a></li>
-      </ul>
-    </div>
-  </section>
-
-</section>
-
-<!--网页页脚-->
-<section class="footer">
-  <hr/>
-  <section class="./images/footerImg">
-    <!-- 放置图片背景 footer.png-->
-  </section>
-  <div class="footerDiv">
-    <ul class="footerUl">
-      <li id="footerLeft">Rights Reserved 2016-2020 by
-        <a href="home.html">中南大学铁道校区勤工助学中心</a>
-      </li>
-      <li id="footerRight">
-        <a href="#">联系我们</a>&nbsp;|&nbsp;
-        <a href="#">问题与建议</a>&nbsp;|&nbsp;
-        <a href="#">收藏本页</a>
-      </li>
-    </ul>
   </div>
-</section>
+
+  <!--中心信息-->
+  <div class="contentInfo">
+    <a class="infoTitle" href="#">中心信息</a>
+    <hr/>
+    <div class="info">
+      <a href="#">
+        <img class="infoImg" src="../images/logo.png" width="50" height="50" title="中南大学铁道校区勤工助学中心">
+        <p>
+          中南大学<br/>铁道校区勤工助学中心
+        </p>
+      </a>
+    </div>
+
+    <div class="Info">
+      <p class="infoTime">办公时间：&nbsp;08:00-18:20</p>
+    </div>
+
+    <div class="Info">
+      <p class="infoLocation">办公地点：&nbsp;铁道学院办公楼411</p>
+    </div>
+
+    <div class="Info">
+      <p class="infoContact">联系方式：&nbsp;82656607</p>
+    </div>
+
+    <div class="Info">
+      <p class="infoContact">中 心QQ：&nbsp;395326220</p>
+    </div>
+  </div>
+
+  <!--家教信息-->
+  <div class="contentTutor">
+    <a class="tutorTitle" href="#">家教信息</a>
+    <a class="parentIn" href="#">
+      <img src="../images/in.png" width="17px" height="17px">
+      家长入口
+    </a>
+    <hr/>
+    <div class="tutorList">
+      <ul>
+        <!--读取数据库至数组tutor_info-->
+        <li>
+          <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+        <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+        </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号家教信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+      </ul>
+    </div>
+  </div>
+
+  <!--兼职信息-->
+  <div class="contentJob">
+    <a class="jobTitle" href="#">兼职信息</a>
+    <a class="BossIn" href="#">
+      <img src="../images/in.png" width="17px" height="17px">
+      企业入口
+    </a>
+    <hr/>
+    <div class="jobList">
+      <ul>
+        <!--读取数据库至数组job_info-->
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+        <li>
+          <a href="#">•［13728号兼职信息］美岭村（步行5分钟）教英语教英语  <span class="signup">报名</span>
+          </a>
+        </li><hr class="list"/>
+      </ul>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
